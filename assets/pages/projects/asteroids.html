@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="/index.html">Home</a></li>
+							<li><a href="/landing.html">Landing</a></li>
+							<li><a href="/generic.html">Generic</a></li>
+							<li><a href="/elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Asteroids.</h1>
+									</header>
+									<span class="image main bordered"><img src="/assets/images/pic01.jpg" alt="" /></span>
+
+									<div class="box">
+										<h3>Project Details</h3>
+										<p>
+											<b>Project Type:</b> Browser Game / School Project 
+											<br> 
+											<b>Engine / Languages Used:</b> Custom , javascript + p5
+											<br>
+											<b>Role:</b> Everything
+											<br>
+											<b>Links:</b> Github, Itch
+										</p>
+									</div>
+
+									<h2>Description</h2>
+									<p>
+										This is a recreation of the classic game "Asteroids" made from scratch in javascript using the p5 library.
+									</p>	
+									<p>
+										Intended to run in your browser, play a game where you must navigate and clear out asteroids and hostile alien life forms using your blaster, which has A LOT of recoil. Survive as long as you can, and keep track of your attempts using the leaderboard!
+									</p>
+
+									<h2>Background</h2>
+									<p>
+										I made this game for an assignment I was given in the "Applied Math for Games" class in my second term at RRC's "Game Development: Programming" program. The assignment was structured in a manner where every feature we implemented from a large list was worth a set number of points based on their difficulty. If one were to implement every feature and complete every bonus task, they would be given well over 100% on the assignment. From there, we were given the keys to plan out our project on our own, structure the architecture as we pleased, and choose which features we wanted to implement, and in what order.
+									</p>
+
+
+									<h2>Goals</h2>
+									<p>
+										Plain and simple, my main goal here was to overachieve. I wanted to implement as many of gameplay features I could. My minimum target grade for this assignment was 100%, and I would accept no less. I tend to do my best work when pushing myself like that.
+										<br>
+										Being one of the few programmers in the class with a bit of prior web experience, I also wanted to use this as an excuse to dust off those old skills and make the project's html elements look nice and pretty wherever possible.
+									</p>
+
+									<h2>Reflections</h2>
+									<p>
+										<h4>The Look:</h4>
+										I really like how this project turned out! 
+										<br>
+										For the visuals, as I was going through the project I found myself drawn to this very minimalist "old military simulation" style that I really enjoyed. Relearning all the interactions between html, css and javascript after some time away took a little longer than I'd hoped, but I was able to work it out. Overall, I think it looks pretty dang good!
+									</p>
+									<p>
+										<h4>Programming Challenges:</h4>
+										The hardest feature to implement (and by extension the one with the highest point value) was giving the smaller enemy saucers physics based movement and AI that allowed them to navigate the level without crashing. I was a little worried that I may have to neglect this feature in favour of finishing other features. It turns out that my classmate Sam and I saved ourselves a ton of work on the detection part of this setup by way of some rather efficient collsion checking. We spent a long time collaborating on working out efficient ways to run collision checks every frame, and as a result, making the saucers move intelligently was much easier that we were led to believe. 
+										<br>
+										If anything, the hardest part about how I chose to do it was adding extra features! After my son was basically flawless at avoiding obstacles, I decided that he should also be way more agressive towards the player to increase the difficulty. Now he follows the player around (including through screen wrap, which was a nightmare on it's own) unless the player is within a short range otuside of the danger zone. 
+										<br>
+										This creates the fun challenge of forcing the player to deal with him. Is this potentially too difficult for an inexperienced player? Yes, but this is an arcade game, so I choose to think of it as a welcome difficulty spike that proves the player's skill. Besides, this is only how the smaller enemies work, and they're incredibly rare unless you're unlucky.
+									</p>
+
+									<h2>A Fun Fact About This Project</h2>
+									<p>
+										I spent an undue amount of time on this project trying to fix a periodic clickling noise that happens as a result of the ship's thruster sound effect looping. It led me down an extended rabbithole about web standards for playing audio, which resulted in me learning a ton of cool stuff that was ultimately useless for this problem. Turns out it was just an issue with the frequency range of the sound effect itself and how that interacts with speakers. The slight workaround I found was to have the sound fade in when the player's move input starts, and fade out when it ends. This avoids the initial click, but not any of the subsequent ones. I reduced the volume to mitigate the click as much as possible, but it's still there unfortunately.
+									</p>
+
+
+									<div class="box">
+										<h3>Additional Credits</h3>
+										<p>
+											<b>Kyle Geske</b> - Instructor + Feature Reviewer
+											<br>
+											<b>Purple Planet</b> - Source for background music.
+										</p>
+									</div>
+								</div>
+							</section>
+
+					</div>
+
+				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
