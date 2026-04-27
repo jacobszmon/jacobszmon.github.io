@@ -4007,6 +4007,9 @@ p.details {
 	margin: 0em;
 }
 
+p.beforeList {
+	margin: 0em 0em 0.5em 0em;
+}
 
 .projectFooter {
 	background-color: var(--color2);
