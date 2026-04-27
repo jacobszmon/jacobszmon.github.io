@@ -4007,3 +4007,7 @@ p.details {
 	margin: 0em;
 }
 
+
+.projectFooter {
+	background-color: var(--color2);
+}
