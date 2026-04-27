@@ -164,7 +164,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border-bottom: solid 1px;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -3985,4 +3985,16 @@ input, select, textarea {
 
 .firstColumn {
 	width: 25%;
+}
+
+.firstList {
+	background-color: var(--color2);
+}
+.secondList {
+	background-color: var(--color3);
+	padding: 30px 40px 0px 40px; 
+}
+.thirdList {
+	background-color: var(--color4);
+	padding: 30px 40px 0px 40px; 
 }
