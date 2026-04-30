@@ -4080,6 +4080,12 @@ p.beforeList {
 	margin: 0 0 0.5em 0;
 }
 
+.Snippet {
+	width: 100%;
+	display: block;
+	margin: 0 0 0.5em 0;
+}
+
 .Caption {
 	display: block;
 	width: 100%;
