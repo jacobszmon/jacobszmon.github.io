@@ -2186,10 +2186,6 @@ input, select, textarea {
 			max-width: 30%;
 		}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
-
 		.image.left {
 			float: left;
 			margin: 0 1.5em 1.25em 0;
@@ -2201,6 +2197,47 @@ input, select, textarea {
 			margin: 0 0 1.25em 1.5em;
 			top: 0.25em;
 		}
+
+
+			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+			.image.left video, .image.right video {
+				width: 100%;
+			}
+
+			.image.left div, .image.right div {
+				width: 100%;
+			}
+
+			@media screen and (max-width: 1680px) {
+				.image.left, .image.right {
+					max-width: 30%;
+				}
+			}
+
+
+			@media screen and (max-width: 1000px) {
+				.image.left, .image.right {
+					max-width: 45%;
+				}
+			}
+
+			@media screen and (max-width: 800px) {
+				.image.left, .image.right {
+					max-width: 50%;
+				}
+			}
+
+			@media screen and (max-width: 600px) {
+				.image.left, .image.right {
+					max-width: 100%;
+					margin: 0 0 1.25em 0;
+				}
+			}
+			
+		
 
 		.image.fit {
 			display: block;
@@ -3967,7 +4004,7 @@ input, select, textarea {
 
 .image.bordered {
 	border: solid 10px;
-	border-color: var(--color2);
+	border-color: var(--color3);
 }
 .image.bordered2 {
 	border: solid 10px;
@@ -4017,15 +4054,34 @@ p.beforeList {
 }
 
 
-.image.bordered > div {
+.image.bordered > .BigVid {
 	position: relative;
 	padding-bottom: 56.25%;
 }
 
-.image.bordered > div > iframe {
+.image.bordered > .BigVid > iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+
+
+.image.bordered > .SmallPic {
+	display: block;
+	background-color: var(--color3);
+}
+
+.image.bordered > .SmallPic > video {
+	width: 100%;
+	display: block;
+	margin: 0 0 0.5em 0;
+}
+
+.Caption {
+	display: block;
+	width: 100%;
+	text-align: center;
 }
