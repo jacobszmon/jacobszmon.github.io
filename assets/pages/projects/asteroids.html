@@ -39,7 +39,9 @@
 						<!-- One -->
 							<section id="one">
 								<div class="inner">
-									<span class="image main bordered"><img src="/assets/images/projects/asteroids/TitleImage-BannerStyle.png" alt="" /></span>
+									<span class="image main bordered">
+										<img src="/assets/images/projects/asteroids/TitleImage-BannerStyle.png" alt="" />
+									</span>
 
 									<span class="image bordered">
 										<span class="Showcase">
@@ -82,16 +84,38 @@
 
 									<h2>Goals</h2>
 									<p>
+										<span class="image right bordered">
+											<span class="Showcase">
+												<video src="/assets/images/projects/asteroids/GameOver.mp4" autoplay loop alt="A short video loop of the game over screen. The words 'Simulation Complete' are displayed above a field to enter a name for the leaderboard. Enter and  Cancel buttons are labelled 'Submit' and 'Omit'"></video>
+												<span class="Caption"><b>Game Over!</b></span>
+											</span>
+										</span>
+
 										Plain and simple, my main goal here was to overachieve. I wanted to implement as many gameplay features as I could. My minimum target grade for this assignment was 100%, and I would accept no less. I tend to do my best work when pushing myself like that.
 										<br>
 										This meant getting all of the core features into the game, as well as abiding by certain restrictions and guidelines during the process for extra marks wherever I could find them. It also meant finding a way to include a leaderboard that saved a player's previous attempts.
 										<br>
+										<br>
 										Being one of the few programmers in the class with a bit of prior web experience, I also wanted to use this as an excuse to dust off those old skills and make the project's html elements look nice and pretty wherever possible.
+									</p>
+
+									<h2>Core Functionality</h2>
+									<p>
+										<span class="image bordered">
+											<span class="Showcase">
+												<img src="/assets/images/projects/asteroids/System Hierarchy.png">
+												<span class="Caption"><b>
+													javascript handles deletion of class instances automatically when references to the instance are removed or lost, so all instances needed for gameplay are stored one jump up the "Creates" hierarchy" (i.e. Game Objects are created and cleared by the Game Object Manager, which is created and stored by the Game Instance).
+													<br><br>
+													By positioning all "game essential" class instances downstream of the Game Instance, we can start a new game by replacing the single reference to the old game instance with a new one. This clears all references to every instance from the old game, trashing them.</b>
+												</span>
+											</span>
+										</span>
 									</p>
 
 									<h2>Reflections</h2>
 									<p>
-										My Final Grade on this assignment was 107.14%. Needless to say, I really like how this project turned out! 
+										My Final Grade on this assignment was 107.14%. Needless to say, I really like how this project turned out!
 										<br>
 										I'd say my favourite aspect of the game as it stands is the shot recoil. I'm well aware it's way too much, but that's part of the fun of it! I set it high on purpose while implementing it for testing purposes, and I found that the game was more fun when it was high than when it was low. It provides an alternate way to move around, and allows you to play much more recklessly. Chasing down asteroids and saucers and bailing out of a collision using the recoil is a ton of fun. It's a testament to the idea that sometimes the best way to balance the feel of a feature is start high and dial it in, rather than starting low cranking it up.
 
