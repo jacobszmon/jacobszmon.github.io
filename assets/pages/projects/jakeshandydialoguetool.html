@@ -42,7 +42,12 @@
 									<header class="major">
 										<h1>Jake's Handy Dialogue Tool</h1>
 									</header>
-									<span class="image main bordered"><img src="/assets/images/projects/dialogue/JHDT_Header.png" alt="" /></span>
+									<span class="image main bordered">
+										<span class="Showcase">
+											<video src="/assets/images/projects/dialogue/Tool Showcase.mp4" autoplay loop alt="A video showcasing the adaptability of my son, the small saucer."></video>
+											<span class="Caption"><b>The tool in action!</b></span>
+										</span>
+									</span>
 
 									<div class="box">
 										<h3>Project Details</h3>
@@ -61,7 +66,7 @@
 
 									<h2>Description</h2>
 									<p>
-										"Jake's Handy Dialogue Tool" is a game development tool aimed at writers to help them script out dialogue scenes with reactive choices without touching a single line of code. The project also contains a scene reader that allows the user to play through scenes they’ve created to give them an idea of how they'll look when used.
+										<i>Jake's Handy Dialogue Tool</i> is a game development tool aimed at writers to help them script out dialogue scenes with reactive choices without touching a single line of code. The project also contains a scene reader that allows the user to play through scenes they’ve created to give them an idea of how they'll look when used.
 									</p>
 
 									<h2>Background</h2>
@@ -80,9 +85,38 @@
 									<p>
 										I wanted to make a game development tool aimed at writers that would allow them to easily script out dialogue scenes with branching choices, and then save all of that scene information (including all the info needed for choices) into a fairly readable .json file. 
 										<br>
-										I also wanted the tool to be able to open and modify previously created scenes, allowing for work to be done on a scene without having to touch an ounce of code.
+										I also wanted the tool to be able to open and modify previously created scenes, allowing for work to be done on a scene over multiple sessions without having to touch an ounce of code.
 										<br>
 										To accompany this tool, I also wanted to make a very basic scene reader that could allow the user to play through scenes they’d created, showcasing how the scene data could be used in practice.
+									</p>
+
+									<h2>Core Functionality</h2>
+									<p>
+										The tool functions by storing each "story node" (sequences, choices) into arrays sorted by type as they're created. Whenever they are updated, they pass their changes upstream to the scene constructor. When you save your scenes, the editor runs through all scenes and tells their scene constructors to make sure their contents are up to date. 
+										<br>
+										Once they are, it gathers a bunch of data that is already JSON compatible and saves it to a JSON file on the user's device at <i>"C:/Users/user/AppData/Roaming/Godot/app_userdata/DialogueSystem"</i>. 
+										<br>
+										<br>
+										<b>Fun fact:</b> the app_userdata folder is where most Godot Games store their save data due to engine limitations. Have fun with that!
+										<br>
+										<br>
+										When you boot up the project, it searches that directory for the JSON file. If it doesn't already exist, it creates one that includes two example scenes I built using this tool. From there, you can play through any scene using the scene reader, or create/modify any scenes using the scene constructor.
+										<br>
+										<br>
+										<span class="image bordered">
+											<span class="Showcase">
+												<img src="/assets/images/projects/dialogue/Translation Layers.png">
+												<span class="Caption">
+													<b>
+														Here's an example of how a sequence gets stored and later decoded by the project!
+														<br>
+														Each textbox is actually an array of objects, each of which has a string and a style. When decoded, these lines are appended onto the end of each other seamlessly using a wrap box.
+														<br>
+														This allows you to switch text styling mid-textbox, which is something I personally would look for in a tool like this.
+													</b>
+												</span>
+											</span>
+										</span>
 									</p>
 
 									<h2>Reflections</h2>
@@ -96,6 +130,14 @@
 										Looking back on this project, it occurs to me that this is where I really learned how to think about programming architecturally, rather than just simple line to line code. I think back on where I was before starting this project, and I just remember being super anxious to put something impressive in my portfolio so I would get accepted into college. But in the month-long process of actually making it, all of those worries fell away and I just fell in love with it. By the time I was done, I didn't even care if I got into school anymore, because no matter what the portfolio review committee thought, I was proud of myself and my work. 
 										<br>
 										What this project really taught me was that even if something is currently outside my grasp in terms of skill, I can build a ladder and get where I need to be anyway. It feels weird to say, but I'm a better person because I made this software tool. Maybe I'll revisit it some day, maybe I'll keep it as is forever. Either way, there will always be place in my heart for this thing. For my money, this is the best thing I've ever made.
+										<br>
+										<br>
+										<span class="image bordered">
+											<span class="Showcase">
+												<video src="/assets/images/projects/dialogue/Jake's Handy Dialogue Tool.mp4" autoplay loop alt="A video of a full attempt at the game, including a showcase of the leaderboard updating. Not to brag or anything, but it was a high score."></video>
+												<span class="Caption"><b>Here's a play-through of a scene I wrote using this tool, played in the scene reader.</b></span>
+											</span>
+										</span>
 									</p>
 
 									<h2>A Fun Fact About This Project</h2>
