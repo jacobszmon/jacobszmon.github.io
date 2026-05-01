@@ -4069,12 +4069,12 @@ p.beforeList {
 
 
 
-.image.bordered > .SmallPic {
+.image.bordered > .Showcase{
 	display: block;
 	background-color: var(--color3);
 }
 
-.image.bordered > .SmallPic > video {
+.image.bordered > .Showcase > video {
 	width: 100%;
 	display: block;
 	margin: 0 0 0.5em 0;
